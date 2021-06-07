@@ -5,8 +5,23 @@
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+
+<p>
+  import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+       Scanner sr = new Scanner(System.in);
+       String wrd = sr.nextLine();
+       int n = sr.nextInt();
+       String back = wrd.substring(0,n);
+       String front = wrd.substring(n);
+       
+       String newWrd = front + back;
+       System.out.println(newWrd);
+    }
+}
+
+</p>
 
 </body>
 </html>

@@ -1,0 +1,14 @@
+.reg-section .reg-section-text {
+    padding: 3rem
+}
+
+.reg-section .showcase-img {
+    min-height: 30rem;
+    background-size: cover
+}
+
+@media(min-width: 768px) {
+    .reg-section .reg-section-text {
+        padding: 2rem
+    }
+}

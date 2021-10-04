@@ -31,17 +31,17 @@
             </ul>
             <ul class="navbar-nav collapse navbar-collapse justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><small>Admin Portal</small></a>
+                    <a class="nav-link text-white" href="admin-signin.html"><small>Admin Portal</small></a>
                 </li>
                 <li class="nav-item"><span class="text-white">|</span></li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><small>Student Portal</small></a>
+                    <a class="nav-link text-white" href="voter-signin.html"><small>Student Portal</small></a>
                 </li>
             </ul>
         </div>
     </nav>
     <!--Main navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="main-nav navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand fs-3 fw-bold" href="#"><img src="assets/img/1vote.png" alt="" width="40" height="40">
                 1VOTE PLMAR</a>
@@ -49,7 +49,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav nav-tabs">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -68,17 +68,18 @@
     </nav>
     <!--PLMar BG with centered text-->
     <header class="text-center text-white masthead"
-        style="background:url('assets/img/bg.png')no-repeat center center;background-size:cover;">
+        style="background:url('assets/img/Pinot-Noir.jpg')no-repeat center center;background-size:cover;">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-9 mx-auto position-relative">
-                    <h1 class="mb-5">Build a landing page for your business or project and generate more leads!</h1>
+                    <h1 class="mb-5">Have a vision? Make a right decision! VOTE!</h1>
+                    <h1 class="mb-5">1 VOTE PLMAR</h1>
                 </div>
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto position-relative">
                     <form>
                         <div class="row">
-                            
+
                         </div>
                     </form>
                 </div>
@@ -102,7 +103,8 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="studnum" class="form-label">Student Number</label>
-                                <input type="text" class="form-control" placeholder="PM-XX-XXXXX-X" name="studnum" required>
+                                <input type="text" class="form-control" placeholder="PM-XX-XXXXX-X" name="studnum"
+                                    required>
                             </div>
                         </div>
                         <div class="row">
@@ -110,17 +112,15 @@
                                 <label for="mname" class="form-label">Middle Name</label>
                                 <input type="text" class="form-control mb-2" placeholder="" name="mname" required>
                             </div>
-                            <div class="dropdown col-md-6">
+                            <div class="col-md-6">
                                 <label for="" class="form-label">Course</label>
-                                <button class="form-control btn dropdown-toggle btn-outline-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                 --Select Course--
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                              </div>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>--Select Course--</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
@@ -134,7 +134,8 @@
                                 <div class="input-group mb-3">
                                     <input type="email" class="form-control mb-2" placeholder="" name="email" required>
                                     <div class="input-group-append">
-                                      <button class="btn btn-outline-dark" type="button"><small>Send OTP</small></button>
+                                        <button class="btn btn-outline-dark" type="button"><small>Send
+                                                OTP</small></button>
                                     </div>
                                 </div>
                             </div>
@@ -143,16 +144,20 @@
                                 <div class="input-group mb-3 mt-2">
                                     <input type="text" class="form-control mb-2" placeholder="" name="verify">
                                     <div class="input-group-append">
-                                      <button class="btn btn-outline-dark" type="button"><small>Verify OTP</small></button>
+                                        <button class="btn btn-outline-dark" type="button"><small>Verify
+                                                OTP</small></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox"><small>I agree that the provided information is correct and legitimate.</small></label></div>
+                            <div class="form-check"><label class="form-check-label"><input class="form-check-input"
+                                        type="checkbox"><small>I agree that the provided information is correct and
+                                        legitimate.</small></label></div>
                         </div>
-                        <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit">Sign Up</button></div><a class="already" href="#">You already have an account? Login here.</a>
+                        <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit">Sign Up</button>
+                        </div><a class="already" href="voter-signin.html">You already have an account? Login here.</a>
                     </form>
                 </div>
             </div>
